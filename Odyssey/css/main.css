@@ -1,12 +1,18 @@
+/* header */
 .header {
-    margin: 4vh 18vw 0;
+    position: relative;
+    height: 100vh;
+    margin: 0 18vw;
 }
 
+/* top header */
 .top-header {
     display: flex;
     justify-content: space-between;
+    padding: 4vh 0 0;
 }
 .Search {
+    position: relative;
     width: 14vw;
     font-size: 14px;
     border: none;
@@ -16,6 +22,62 @@
     수직이 0이라는 것은 상단에 이미지 위치 */
     padding-bottom: 7px;
 }
-input::placeholder {
+input::placeholder { color: #999; }
+
+/* main header */
+.main-header {
+    position: relative;
+    margin-top: 5vh;
+}
+.main-header strong {
+    font-family: 'Pretendard-Bold';
+    font-size: 2.5vw;
+}
+.main-header p {
+    font-family: 'Pretendard-Light';
+    font-size: 0.9vw;
     color: #999;
+    margin: 1vh 0;
+}
+.top-menu ul {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5vh 0;
+}
+.top-menu li {
+    margin-right: 4vw;
+}
+
+.promotion {
+    position: relative;
+    width: 100vw;
+    height: 63vh;
+    background: url(/Odyssey/image/header\ background.webp) no-repeat center center;
+    background-size: cover;
+    left: 50%;
+    margin-left: -50vw;
+}
+.inner-promotion {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 0 18vw;
+    padding-top: 18vh;
+}
+.inner-promotion strong {
+    color: #fff;
+    font-size: 4vw;
+    text-align: right;
+}
+.link-promotion {
+    position: relative;
+    width: 160px;
+    background: #ffffff;
+    border-radius: 40px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 40px;
+    margin-top: 5vh;
 }
